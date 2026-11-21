@@ -1923,5 +1923,80 @@
       });
     });
   </script>
+
+<!-- === FITUR MUSIK LATAR === -->
+<style>
+  .music-btn {
+    position: fixed;
+    bottom: 84px;
+    right: 20px;
+    z-index: 9999;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #6b1d24;
+    color: #f8f3eb;
+    border: 2px solid #d4af37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+  .music-btn.playing {
+    animation: putarMusik 5s linear infinite;
+  }
+  @keyframes putarMusik {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+</style>
+
+<audio id="bg-music" loop>
+  <source src="audio/lagu.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-btn" class="music-btn" type="button" aria-label="Putar atau Jeda Musik">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+  </svg>
+</button>
+
+<script>
+  (function () {
+    const bgMusic = document.getElementById('bg-music');
+    const musicBtn = document.getElementById('music-btn');
+    let isPlaying = false;
+
+    function playMusic() {
+      bgMusic.play().then(() => {
+        isPlaying = true;
+        musicBtn.classList.add('playing');
+      }).catch(() => {});
+    }
+
+    function autoStart(e) {
+      if (e.target.closest('#music-btn')) return;
+      playMusic();
+      document.removeEventListener('click', autoStart);
+    }
+
+    // Lagu otomatis nyala pas tombol Buka Undangan (atau layar) diklik pertama kali
+    document.addEventListener('click', autoStart);
+
+    // Tombol pause / play manual
+    musicBtn.addEventListener('click', function () {
+      document.removeEventListener('click', autoStart);
+      if (isPlaying) {
+        bgMusic.pause();
+        isPlaying = false;
+        musicBtn.classList.remove('playing');
+      } else {
+        playMusic();
+      }
+    });
+  })();
+</script>
+<!-- === AKHIR FITUR MUSIK LATAR === -->
 </body>
 </html>
