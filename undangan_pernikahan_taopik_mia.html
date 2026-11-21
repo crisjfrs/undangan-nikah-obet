@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Undangan Pernikahan — Taopik &amp; Mia | 10 Januari 2027</title>
+  <meta name="description" content="Undangan Pernikahan Taopik Hermawan &amp; Mia Nur Sholeha — Minggu, 10 Januari 2027 di Bandung." />
+
+  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans, Great Vibes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Konfigurasi Tema Sunda Minimalis Bandung -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF7F2',
+            cream: '#F3ECE1',
+            maroon: '#6B131E',
+            'maroon-light': '#851826',
+            'maroon-dark': '#4A0C14',
+            beskap: '#1E1C1B',
+            gold: '#C49A52',
+            'gold-soft': '#DEC08A',
+            batik: '#7F8891',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            script: ['"Great Vibes"', 'cursive'],
+          },
+          boxShadow: {
+            'mobile-frame': '0 24px 64px -16px rgba(30, 28, 27, 0.25)',
+            'maroon-soft': '0 10px 30px -10px rgba(107, 19, 30, 0.22)',
+            'gold-ring': '0 0 0 1px rgba(196, 154, 82, 0.45)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Gaya Animasi Halus & Utilitas Khusus -->
+  <style>
+    /* Mengunci scroll saat sampul masih terbuka */
+    body.cover-locked {
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* Tekstur kertas halus pada latar desktop */
+    .desktop-backdrop {
+      background-color: #E8E1D6;
+      background-image: radial-gradient(rgba(107, 19, 30, 0.06) 1px, transparent 1px);
+      background-size: 22px 22px;
+    }
+
+    /* Animasi Scroll Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Transisi penutupan sampul */
+    .cover-exit {
+      opacity: 0 !important;
+      transform: translateY(-28px) scale(0.985) !important;
+      pointer-events: none !important;
+    }
+
+    /* Menyembunyikan scrollbar horizontal pada strip thumbnail */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Animasi denyut lembut untuk indikator panah gulir */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    .animate-float-slow {
+      animation: floatSlow 3.2s ease-in-out infinite;
+    }
+
+    /* Animasi progress bar auto-slide */
+    @keyframes progressFill {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
+    .slide-progress-active {
+      animation: progressFill 3.5s linear forwards;
+    }
+  </style>
+</head>
+
+<body class="desktop-backdrop font-sans text-beskap antialiased selection:bg-maroon selection:text-ivory cover-locked">
+
+  <!-- =====================================================================
+       CONTAINER MOBILE-FIRST (Max-Width 430px terpusat rapi di desktop)
+  ====================================================================== -->
+  <div id="mobile-shell" class="relative mx-auto min-h-screen w-full max-w-[430px] bg-ivory shadow-mobile-frame overflow-x-hidden">
+
+    <!-- ===================================================================
+         1. COVER / SAMPUL UNDANGAN FULLSCREEN
+    ==================================================================== -->
+    <section
+      id="cover-overlay"
+      aria-label="Sampul Undangan Pernikahan"
+      class="fixed inset-y-0 left-1/2 -translate-x-1/2 z-50 w-full max-w-[430px] h-[100dvh] bg-ivory flex flex-col justify-between px-6 py-6 sm:py-7 overflow-y-auto transition-all duration-700 ease-out"
+    >
+      <!-- Ornamen Bingkai Sudut Minimalis Batik / Megamendung -->
+      <svg aria-hidden="true" class="pointer-events-none absolute top-3 left-3 w-12 h-12 text-gold/55" viewBox="0 0 64 64" fill="none">
+        <path d="M4 44V16C4 9.373 9.373 4 16 4H44" stroke="currentColor" stroke-width="1.2" />
+        <path d="M10 34V18C10 13.582 13.582 10 18 10H34" stroke="#6B131E" stroke-opacity="0.45" stroke-width="1" />
+        <path d="M16 22C16 18 19.5 16 23 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+      </svg>
+      <svg aria-hidden="true" class="pointer-events-none absolute top-3 right-3 w-12 h-12 text-gold/55 -scale-x-100" viewBox="0 0 64 64" fill="none">
+        <path d="M4 44V16C4 9.373 9.373 4 16 4H44" stroke="currentColor" stroke-width="1.2" />
+        <path d="M10 34V18C10 13.582 13.582 10 18 10H34" stroke="#6B131E" stroke-opacity="0.45" stroke-width="1" />
+        <path d="M16 22C16 18 19.5 16 23 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+      </svg>
+      <svg aria-hidden="true" class="pointer-events-none absolute bottom-3 left-3 w-12 h-12 text-gold/55 -scale-y-100" viewBox="0 0 64 64" fill="none">
+        <path d="M4 44V16C4 9.373 9.373 4 16 4H44" stroke="currentColor" stroke-width="1.2" />
+        <path d="M10 34V18C10 13.582 13.582 10 18 10H34" stroke="#6B131E" stroke-opacity="0.45" stroke-width="1" />
+      </svg>
+      <svg aria-hidden="true" class="pointer-events-none absolute bottom-3 right-3 w-12 h-12 text-gold/55 -scale-x-100 -scale-y-100" viewBox="0 0 64 64" fill="none">
+        <path d="M4 44V16C4 9.373 9.373 4 16 4H44" stroke="currentColor" stroke-width="1.2" />
+        <path d="M10 34V18C10 13.582 13.582 10 18 10H34" stroke="#6B131E" stroke-opacity="0.45" stroke-width="1" />
+      </svg>
+
+      <!-- Bagian Atas Cover: Ornamen Wayang Golek Sunda + Wilujeng Sumping -->
+      <div class="relative z-10 flex flex-col items-center text-center pt-1">
+        <!-- SVG Minimalis Sepasang Wayang Golek & Gunungan Sunda -->
+        <svg aria-hidden="true" class="w-36 h-12 text-maroon mb-1.5" viewBox="0 0 220 68" fill="none">
+          <!-- Garis pembatas kiri & kanan -->
+          <line x1="10" y1="42" x2="54" y2="42" stroke="#C49A52" stroke-width="0.9" stroke-opacity="0.7" />
+          <line x1="166" y1="42" x2="210" y2="42" stroke="#C49A52" stroke-width="0.9" stroke-opacity="0.7" />
+          <!-- Wayang Golek Kiri (Siluet Rama/Pria bermahkota Sunda) -->
+          <g stroke="#6B131E" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M68 23C68 18.5 71 15 74.5 14C75.5 11.5 77 10 78 10C79 10 79.5 12 79 14.5C82 16 83 19.5 82.5 23.5C82 26.5 80 28.5 78 29.5" />
+            <path d="M68 23C66 23.5 64.5 25 65.5 27C66.5 28.5 68.5 28.5 70 28" />
+            <path d="M72 30L67 35L64 49L72 52L79 49L83 36L78 30" />
+            <path d="M73 32V49" stroke="#C49A52" stroke-width="0.9" />
+            <circle cx="75.5" cy="18.5" r="1" fill="#C49A52" stroke="none" />
+          </g>
+          <!-- Ornamen Gunungan Sunda Tengah -->
+          <g>
+            <path d="M110 8C115 16 123 25 125 36C126 42 121 48 110 53C99 48 94 42 95 36C97 25 105 16 110 8Z" stroke="#C49A52" stroke-width="1.2" fill="#6B131E" fill-opacity="0.06" />
+            <path d="M110 15C113.5 21 118 28 119 35.5C119.5 39.5 116.5 43.5 110 47C103.5 43.5 100.5 39.5 101 35.5C102 28 106.5 21 110 15Z" stroke="#6B131E" stroke-width="0.9" stroke-opacity="0.7" />
+            <line x1="110" y1="21" x2="110" y2="45" stroke="#C49A52" stroke-width="0.9" />
+            <circle cx="110" cy="31" r="2.2" fill="#6B131E" />
+          </g>
+          <!-- Wayang Golek Kanan (Siluet Srikandi/Wanita bersiger Sunda) -->
+          <g stroke="#6B131E" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M152 23C152 18.5 149 15 145.5 14C144.5 11.5 143 10 142 10C141 10 140.5 12 141 14.5C138 16 137 19.5 137.5 23.5C138 26.5 140 28.5 142 29.5" />
+            <path d="M152 23C154 23.5 155.5 25 154.5 27C153.5 28.5 151.5 28.5 150 28" />
+            <path d="M148 30L153 35L156 49L148 52L141 49L137 36L142 30" />
+            <path d="M147 32V49" stroke="#C49A52" stroke-width="0.9" />
+            <circle cx="144.5" cy="18.5" r="1" fill="#C49A52" stroke="none" />
+          </g>
+        </svg>
+
+        <p class="font-script text-2xl text-maroon leading-none">Wilujeng Sumping</p>
+        <p class="mt-1 text-[10px] uppercase tracking-[0.28em] text-batik font-medium">The Wedding of</p>
+        <h1 class="mt-1 font-serif text-[34px] sm:text-[38px] font-semibold text-beskap leading-tight tracking-wide">
+          Taopik <span class="font-script text-gold font-normal text-3xl px-0.5">&amp;</span> Mia
+        </h1>
+        <p class="mt-1 text-xs tracking-[0.32em] text-maroon font-medium">10 &bull; 01 &bull; 2027</p>
+      </div>
+
+      <!-- Bagian Tengah Cover: Arch Frame Foto Utama -->
+      <div class="relative z-10 my-4 flex justify-center">
+        <div class="relative w-[225px] sm:w-[242px] p-2 rounded-t-[130px] rounded-b-2xl border border-gold/60 bg-cream/70 shadow-maroon-soft">
+          <!-- Inner fine border -->
+          <div class="relative w-full aspect-[3/4] overflow-hidden rounded-t-[122px] rounded-b-xl border border-maroon/25 bg-maroon-dark">
+            <img
+              data-photo-key="utama"
+              alt="Foto Prewedding Utama Taopik &amp; Mia"
+              class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
+            />
+            <!-- Fallback Elegan Jika Foto Lokal Belum Tersedia -->
+            <div class="photo-fallback hidden absolute inset-0 flex flex-col items-center justify-center p-5 text-center bg-gradient-to-b from-maroon via-maroon-dark to-beskap text-ivory">
+              <svg class="w-12 h-12 text-gold/80 mb-3" viewBox="0 0 64 64" fill="none">
+                <path d="M32 8C37 16 44 24 45 34C46 40 41 47 32 52C23 47 18 40 19 34C20 24 27 16 32 8Z" stroke="currentColor" stroke-width="1.3" />
+                <circle cx="32" cy="31" r="4" stroke="currentColor" stroke-width="1.2" />
+              </svg>
+              <span class="font-serif italic text-gold-soft text-sm">Foto Utama</span>
+              <span class="fallback-path mt-1.5 px-2.5 py-1 rounded-full bg-ivory/10 border border-gold/35 text-[10px] font-mono text-ivory/90 break-all"></span>
+            </div>
+            <!-- Subtle bottom maroon vignette -->
+            <div class="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-maroon-dark/55 to-transparent"></div>
+          </div>
+          <!-- Aksen Berlian Kecil di Puncak Lengkung -->
+          <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-3.5 h-3.5 rotate-45 bg-ivory border border-gold flex items-center justify-center">
+            <div class="w-1.5 h-1.5 bg-maroon"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Bawah Cover: Nama Tamu Dinamis + Tombol Buka Undangan -->
+      <div class="relative z-10 flex flex-col items-center text-center pb-1">
+        <div class="w-full max-w-[310px] rounded-2xl bg-cream/90 border border-gold/40 px-4 py-3 mb-4">
+          <p class="text-[10px] uppercase tracking-[0.22em] text-batik">Kepada Yth.</p>
+          <p id="cover-guest-name" class="mt-1 font-serif text-xl font-semibold text-beskap leading-snug">
+            Bapak/Ibu/Saudara/i
+          </p>
+          <p class="mt-0.5 text-[11px] text-beskap/70">Di Tempat</p>
+        </div>
+
+        <button
+          id="btn-open-invitation"
+          type="button"
+          class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-maroon hover:bg-maroon-light active:scale-[0.98] text-ivory px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] shadow-maroon-soft border border-gold/45 transition-all duration-300 cursor-pointer min-h-[46px]"
+        >
+          <!-- Ikon Amplop Terbuka -->
+          <svg class="w-4 h-4 text-gold-soft transition-transform duration-300 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 7.5L12 13L20 7.5" />
+            <rect x="3" y="5" width="18" height="14" rx="2.5" />
+          </svg>
+          <span>Buka Undangan</span>
+        </button>
+
+        <p class="mt-3 text-[10px] tracking-[0.18em] uppercase text-batik/80">Bandung, Jawa Barat</p>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         KONTEN UTAMA UNDANGAN
+    ==================================================================== -->
+    <main id="main-content" class="relative pb-28">
+
+      <!-- =================================================================
+           2. HERO & SALAM PEMBUKA (#beranda)
+      ================================================================== -->
+      <section id="beranda" class="relative px-6 pt-10 pb-12 overflow-hidden">
+        <!-- Pita Tipis Maroon-Gold di Bagian Paling Atas -->
+        <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-maroon via-gold to-maroon"></div>
+
+        <!-- Header Salam Sunda & Islami -->
+        <div class="reveal text-center">
+          <p class="font-script text-[32px] text-maroon leading-none">Sampurasun</p>
+          <div class="my-2.5 flex items-center justify-center gap-3">
+            <span class="h-px w-10 bg-gold/60"></span>
+            <span class="w-1.5 h-1.5 rotate-45 bg-maroon"></span>
+            <span class="h-px w-10 bg-gold/60"></span>
+          </div>
+          <p class="font-serif text-lg italic font-semibold text-beskap">
+            Assalamu&rsquo;alaikum Warahmatullahi Wabarakatuh
+          </p>
+          <p class="mt-2.5 text-xs leading-relaxed text-beskap/80 max-w-[330px] mx-auto">
+            Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami.
+          </p>
+        </div>
+
+        <!-- Mini Auto-Slide Preview Berbingkai Lengkung Maroon-Emas -->
+        <div class="reveal mt-7 flex flex-col items-center">
+          <div class="relative w-full max-w-[300px] p-2.5 rounded-t-[155px] rounded-b-3xl bg-cream border border-gold/55 shadow-maroon-soft">
+            <div id="hero-mini-slider" class="relative w-full aspect-[3/4] overflow-hidden rounded-t-[146px] rounded-b-2xl border border-maroon/30 bg-maroon-dark">
+              <!-- Slide mini di-render oleh JavaScript dari PHOTO_PATHS -->
+            </div>
+
+            <!-- Label Nama & Tanggal di Bawah Bingkai -->
+            <div class="relative -mt-7 mx-3 rounded-2xl bg-ivory/95 backdrop-blur-sm border border-gold/50 px-4 py-3 text-center shadow-sm">
+              <p class="text-[10px] uppercase tracking-[0.26em] text-batik">Minggu, 10 Januari 2027</p>
+              <h2 class="mt-0.5 font-serif text-2xl font-semibold text-maroon tracking-wide">
+                Taopik <span class="font-script text-gold font-normal">&amp;</span> Mia
+              </h2>
+              <!-- Indikator Mini Dots -->
+              <div id="hero-mini-dots" class="mt-2 flex items-center justify-center gap-1.5"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kartu Kutipan QS. Ar-Rum: 21 -->
+        <div class="reveal mt-8 relative rounded-3xl bg-maroon text-ivory px-6 py-7 text-center shadow-maroon-soft overflow-hidden border border-gold/35">
+          <!-- Motif Sudut Megamendung / Batik Tipis -->
+          <svg aria-hidden="true" class="pointer-events-none absolute top-2.5 left-2.5 w-10 h-10 text-gold/40" viewBox="0 0 48 48" fill="none">
+            <path d="M4 30V12C4 7.582 7.582 4 12 4H30" stroke="currentColor" stroke-width="1.2" />
+            <path d="M10 22C10 15 15 10 22 10" stroke="currentColor" stroke-width="0.9" stroke-dasharray="2 2" />
+          </svg>
+          <svg aria-hidden="true" class="pointer-events-none absolute bottom-2.5 right-2.5 w-10 h-10 text-gold/40 rotate-180" viewBox="0 0 48 48" fill="none">
+            <path d="M4 30V12C4 7.582 7.582 4 12 4H30" stroke="currentColor" stroke-width="1.2" />
+            <path d="M10 22C10 15 15 10 22 10" stroke="currentColor" stroke-width="0.9" stroke-dasharray="2 2" />
+          </svg>
+
+          <!-- Ornamen Kecil Gunungan -->
+          <svg aria-hidden="true" class="mx-auto w-7 h-7 text-gold-soft mb-2.5" viewBox="0 0 36 36" fill="none">
+            <path d="M18 4C21.5 10 27 16 27.5 22.5C28 26.5 24.5 30 18 33C11.5 30 8 26.5 8.5 22.5C9 16 14.5 10 18 4Z" stroke="currentColor" stroke-width="1.2" />
+            <circle cx="18" cy="20" r="2" fill="currentColor" />
+          </svg>
+
+          <p class="font-serif italic text-[16px] leading-relaxed text-ivory/95">
+            &ldquo;Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.&rdquo;
+          </p>
+          <div class="mt-4 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-gold-soft font-medium">
+            <span class="w-4 h-px bg-gold/60"></span>
+            <span>QS. Ar-Rum : 21</span>
+            <span class="w-4 h-px bg-gold/60"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           3. PROFIL MEMPELAI (#mempelai)
+      ================================================================== -->
+      <section id="mempelai" class="relative px-6 py-12 bg-cream/75 border-y border-gold/25">
+        <!-- Header Bagian -->
+        <div class="reveal text-center mb-8">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-maroon font-semibold">Mempelai Berbahagia</p>
+          <h2 class="mt-1 font-serif text-3xl font-semibold text-beskap">Calon Pengantin</h2>
+          <!-- Pemisah Minimalis Wayang Golek -->
+          <div class="mt-2 flex items-center justify-center gap-3">
+            <span class="h-px w-12 bg-gold/60"></span>
+            <svg aria-hidden="true" class="w-6 h-6 text-maroon" viewBox="0 0 32 32" fill="none">
+              <path d="M16 4C19 9 23 14 23.5 19.5C24 23 21 26 16 28.5C11 26 8 23 8.5 19.5C9 14 13 9 16 4Z" stroke="currentColor" stroke-width="1.2" />
+              <line x1="16" y1="10" x2="16" y2="24" stroke="#C49A52" stroke-width="1" />
+            </svg>
+            <span class="h-px w-12 bg-gold/60"></span>
+          </div>
+        </div>
+
+        <!-- Kartu Mempelai Pria -->
+        <article class="reveal relative rounded-3xl bg-ivory border border-gold/40 p-5 text-center shadow-sm">
+          <!-- Aksen Sudut Batik -->
+          <svg aria-hidden="true" class="pointer-events-none absolute top-3 left-3 w-8 h-8 text-batik/40" viewBox="0 0 40 40" fill="none">
+            <path d="M3 25V10C3 6.134 6.134 3 10 3H25" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <svg aria-hidden="true" class="pointer-events-none absolute bottom-3 right-3 w-8 h-8 text-batik/40 rotate-180" viewBox="0 0 40 40" fill="none">
+            <path d="M3 25V10C3 6.134 6.134 3 10 3H25" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+
+          <!-- Bingkai Foto Mempelai Pria -->
+          <div class="mx-auto w-[196px] p-1.5 rounded-t-[110px] rounded-b-2xl border border-gold/55 bg-cream">
+            <div class="relative w-full aspect-[3/4] overflow-hidden rounded-t-[104px] rounded-b-xl bg-maroon-dark">
+              <img
+                data-photo-key="cowo"
+                alt="Taopik Hermawan — Mempelai Pria"
+                class="w-full h-full object-cover object-top"
+              />
+              <div class="photo-fallback hidden absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-gradient-to-b from-maroon to-beskap text-ivory">
+                <svg class="w-10 h-10 text-gold/80 mb-2" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="17" r="7" stroke="currentColor" stroke-width="1.4" />
+                  <path d="M12 38C12 31.373 17.373 26 24 26C30.627 26 36 31.373 36 38" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+                <span class="font-serif italic text-gold-soft text-xs">Mempelai Pria</span>
+                <span class="fallback-path mt-1 px-2 py-0.5 rounded-full bg-ivory/10 border border-gold/30 text-[9px] font-mono text-ivory/90 break-all"></span>
+              </div>
+            </div>
+          </div>
+
+          <span class="mt-4 inline-block rounded-full bg-maroon/10 text-maroon px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em]">
+            Mempelai Pria
+          </span>
+          <h3 class="mt-2 font-serif text-[28px] font-semibold text-beskap leading-tight">
+            Taopik Hermawan
+          </h3>
+          <div class="my-2.5 mx-auto w-12 h-px bg-gold/70"></div>
+          <p class="text-xs text-batik font-medium">Putra Pertama dari</p>
+          <p class="mt-1 text-sm font-medium text-beskap">
+            Bapak Iwan Hermawan &amp; Ibu Nurhasanah
+          </p>
+        </article>
+
+        <!-- Pembatas Simbol & dengan Aksen Wayang Golek Sunda -->
+        <div class="reveal my-6 flex items-center justify-center gap-3">
+          <div class="h-px flex-1 max-w-[76px] bg-gradient-to-r from-transparent to-gold/70"></div>
+          <div class="flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-ivory border border-gold/45 shadow-sm">
+            <!-- Wayang Kiri Mini -->
+            <svg aria-hidden="true" class="w-5 h-6 text-maroon/80" viewBox="0 0 28 36" fill="none">
+              <path d="M10 12C10 8.5 12.5 6 15 5.5C16 4 17 3 17.5 3C18 3 18.5 4.5 18 6C20 7.5 21 10 20.5 13C20 15.5 18.5 17 17 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+              <path d="M12.5 18.5L9 22L7 32L13 34L18.5 32L21 22.5L17.5 18.5" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" />
+            </svg>
+            <span class="font-script text-3xl text-maroon leading-none pt-1">&amp;</span>
+            <!-- Wayang Kanan Mini -->
+            <svg aria-hidden="true" class="w-5 h-6 text-maroon/80 -scale-x-100" viewBox="0 0 28 36" fill="none">
+              <path d="M10 12C10 8.5 12.5 6 15 5.5C16 4 17 3 17.5 3C18 3 18.5 4.5 18 6C20 7.5 21 10 20.5 13C20 15.5 18.5 17 17 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+              <path d="M12.5 18.5L9 22L7 32L13 34L18.5 32L21 22.5L17.5 18.5" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="h-px flex-1 max-w-[76px] bg-gradient-to-l from-transparent to-gold/70"></div>
+        </div>
+
+        <!-- Kartu Mempelai Wanita -->
+        <article class="reveal relative rounded-3xl bg-ivory border border-gold/40 p-5 text-center shadow-sm">
+          <!-- Aksen Sudut Batik -->
+          <svg aria-hidden="true" class="pointer-events-none absolute top-3 left-3 w-8 h-8 text-batik/40" viewBox="0 0 40 40" fill="none">
+            <path d="M3 25V10C3 6.134 6.134 3 10 3H25" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <svg aria-hidden="true" class="pointer-events-none absolute bottom-3 right-3 w-8 h-8 text-batik/40 rotate-180" viewBox="0 0 40 40" fill="none">
+            <path d="M3 25V10C3 6.134 6.134 3 10 3H25" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+
+          <!-- Bingkai Foto Mempelai Wanita -->
+          <div class="mx-auto w-[196px] p-1.5 rounded-t-[110px] rounded-b-2xl border border-gold/55 bg-cream">
+            <div class="relative w-full aspect-[3/4] overflow-hidden rounded-t-[104px] rounded-b-xl bg-maroon-dark">
+              <img
+                data-photo-key="cewe"
+                alt="Mia Nur Sholeha — Mempelai Wanita"
+                class="w-full h-full object-cover object-top"
+              />
+              <div class="photo-fallback hidden absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-gradient-to-b from-maroon to-beskap text-ivory">
+                <svg class="w-10 h-10 text-gold/80 mb-2" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="17" r="7" stroke="currentColor" stroke-width="1.4" />
+                  <path d="M12 38C12 31.373 17.373 26 24 26C30.627 26 36 31.373 36 38" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+                <span class="font-serif italic text-gold-soft text-xs">Mempelai Wanita</span>
+                <span class="fallback-path mt-1 px-2 py-0.5 rounded-full bg-ivory/10 border border-gold/30 text-[9px] font-mono text-ivory/90 break-all"></span>
+              </div>
+            </div>
+          </div>
+
+          <span class="mt-4 inline-block rounded-full bg-maroon/10 text-maroon px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em]">
+            Mempelai Wanita
+          </span>
+          <h3 class="mt-2 font-serif text-[28px] font-semibold text-beskap leading-tight">
+            Mia Nur Sholeha
+          </h3>
+          <div class="my-2.5 mx-auto w-12 h-px bg-gold/70"></div>
+          <p class="text-xs text-batik font-medium">Putri Pertama dari</p>
+          <p class="mt-1 text-sm font-medium text-beskap">
+            Bapak Enden Sodikin &amp; Ibu Wida Ningsih
+          </p>
+        </article>
+      </section>
+
+      <!-- =================================================================
+           4. HITUNG MUNDUR (COUNTDOWN TIMER LIVE)
+      ================================================================== -->
+      <section aria-label="Hitung Mundur Hari Bahagia" class="px-6 py-11 bg-ivory">
+        <div class="reveal text-center">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-maroon font-semibold">Menuju Hari Bahagia</p>
+          <h2 class="mt-1 font-serif text-3xl font-semibold text-beskap">Hitung Mundur</h2>
+          <p class="mt-1 text-xs text-batik">Minggu, 10 Januari 2027 &bull; 09.00 WIB</p>
+        </div>
+
+        <!-- Grid 4 Kotak Countdown -->
+        <div id="countdown-grid" class="reveal mt-6 grid grid-cols-4 gap-2.5">
+          <div class="rounded-2xl bg-maroon text-ivory py-3.5 px-2 text-center shadow-maroon-soft border border-gold/35">
+            <span id="cd-days" class="block font-serif text-3xl font-semibold leading-none text-ivory">00</span>
+            <span class="mt-1.5 block text-[10px] uppercase tracking-[0.18em] text-gold-soft">Hari</span>
+          </div>
+          <div class="rounded-2xl bg-maroon text-ivory py-3.5 px-2 text-center shadow-maroon-soft border border-gold/35">
+            <span id="cd-hours" class="block font-serif text-3xl font-semibold leading-none text-ivory">00</span>
+            <span class="mt-1.5 block text-[10px] uppercase tracking-[0.18em] text-gold-soft">Jam</span>
+          </div>
+          <div class="rounded-2xl bg-maroon text-ivory py-3.5 px-2 text-center shadow-maroon-soft border border-gold/35">
+            <span id="cd-minutes" class="block font-serif text-3xl font-semibold leading-none text-ivory">00</span>
+            <span class="mt-1.5 block text-[10px] uppercase tracking-[0.18em] text-gold-soft">Menit</span>
+          </div>
+          <div class="rounded-2xl bg-maroon text-ivory py-3.5 px-2 text-center shadow-maroon-soft border border-gold/35">
+            <span id="cd-seconds" class="block font-serif text-3xl font-semibold leading-none text-ivory">00</span>
+            <span class="mt-1.5 block text-[10px] uppercase tracking-[0.18em] text-gold-soft">Detik</span>
+          </div>
+        </div>
+
+        <!-- Status jika acara sudah berlangsung -->
+        <p id="countdown-status" class="hidden mt-4 text-center font-serif italic text-lg text-maroon"></p>
+      </section>
+
+      <!-- =================================================================
+           5. DETAIL ACARA & LOKASI (AKSEN BANDUNG — GEDUNG SATE) (#acara)
+      ================================================================== -->
+      <section id="acara" class="relative px-6 py-12 bg-cream/80 border-y border-gold/25 overflow-hidden">
+        <!-- Header Bagian -->
+        <div class="reveal text-center">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-maroon font-semibold">Rangkaian Acara</p>
+          <h2 class="mt-1 font-serif text-3xl font-semibold text-beskap">Waktu &amp; Lokasi</h2>
+        </div>
+
+        <!-- Siluet Garis Minimalis Gedung Sate Bandung -->
+        <div class="reveal mt-5 mb-2 flex justify-center">
+          <svg aria-hidden="true" class="w-full max-w-[320px] h-24 text-maroon" viewBox="0 0 360 110" fill="none">
+            <!-- Tusuk Sate (6 bulatan ikonik Gedung Sate) -->
+            <line x1="180" y1="8" x2="180" y2="27" stroke="#C49A52" stroke-width="1.3" stroke-linecap="round" />
+            <circle cx="180" cy="11" r="1.4" fill="#6B131E" />
+            <circle cx="180" cy="15" r="1.4" fill="#6B131E" />
+            <circle cx="180" cy="19" r="1.4" fill="#6B131E" />
+            <circle cx="180" cy="23" r="1.4" fill="#6B131E" />
+            <!-- Atap Bertingkat Menara Tengah -->
+            <path d="M167 34L180 26L193 34H167Z" stroke="currentColor" stroke-width="1.2" fill="#6B131E" fill-opacity="0.06" />
+            <path d="M160 44L180 35L200 44H160Z" stroke="currentColor" stroke-width="1.2" fill="#6B131E" fill-opacity="0.08" />
+            <rect x="166" y="44" width="28" height="14" stroke="currentColor" stroke-width="1.2" />
+            <!-- Lengkung Jendela Menara -->
+            <path d="M175 58V51C175 49 177.2 47.5 180 47.5C182.8 47.5 185 49 185 51V58" stroke="#C49A52" stroke-width="1.1" />
+            <!-- Atap Utama Tengah -->
+            <path d="M132 66L160 58H200L228 66H132Z" stroke="currentColor" stroke-width="1.2" fill="#6B131E" fill-opacity="0.06" />
+            <!-- Sayap Kiri & Kanan -->
+            <path d="M44 74L72 64H132V74H44Z" stroke="currentColor" stroke-width="1.15" />
+            <path d="M316 74L288 64H228V74H316Z" stroke="currentColor" stroke-width="1.15" />
+            <!-- Fasad Lantai Bawah & Galeri Lengkung -->
+            <rect x="48" y="74" width="264" height="24" stroke="currentColor" stroke-width="1.2" />
+            <!-- Pilar & Lengkung Galeri Kiri -->
+            <path d="M62 98V85C62 82 65 80 68 80C71 80 74 82 74 85V98" stroke="#7F8891" stroke-width="1" />
+            <path d="M84 98V85C84 82 87 80 90 80C93 80 96 82 96 85V98" stroke="#7F8891" stroke-width="1" />
+            <path d="M106 98V85C106 82 109 80 112 80C115 80 118 82 118 85V98" stroke="#7F8891" stroke-width="1" />
+            <!-- Pintu Gerbang Tengah -->
+            <path d="M150 98V81C150 77 154 74 159 74H201C206 74 210 77 210 81V98" stroke="currentColor" stroke-width="1.2" />
+            <path d="M170 98V84C170 80.5 174.5 78 180 78C185.5 78 190 80.5 190 84V98" stroke="#C49A52" stroke-width="1.2" />
+            <!-- Pilar & Lengkung Galeri Kanan -->
+            <path d="M242 98V85C242 82 245 80 248 80C251 80 254 82 254 85V98" stroke="#7F8891" stroke-width="1" />
+            <path d="M264 98V85C264 82 267 80 270 80C273 80 276 82 276 85V98" stroke="#7F8891" stroke-width="1" />
+            <path d="M286 98V85C286 82 289 80 292 80C295 80 298 82 298 85V98" stroke="#7F8891" stroke-width="1" />
+            <!-- Garis Dasar -->
+            <line x1="20" y1="98" x2="340" y2="98" stroke="#C49A52" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- Kartu Detail Acara Utama -->
+        <div class="reveal relative rounded-3xl bg-ivory border border-gold/50 p-6 shadow-maroon-soft">
+          <!-- Ornamen Sudut Tipis -->
+          <svg aria-hidden="true" class="pointer-events-none absolute top-3 left-3 w-8 h-8 text-gold/60" viewBox="0 0 40 40" fill="none">
+            <path d="M3 24V10C3 6.134 6.134 3 10 3H24" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <svg aria-hidden="true" class="pointer-events-none absolute top-3 right-3 w-8 h-8 text-gold/60 -scale-x-100" viewBox="0 0 40 40" fill="none">
+            <path d="M3 24V10C3 6.134 6.134 3 10 3H24" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+
+          <div class="text-center">
+            <span class="inline-block rounded-full bg-maroon text-ivory px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.22em]">
+              Akad Nikah &amp; Resepsi
+            </span>
+
+            <!-- Tanggal Besar -->
+            <div class="mt-5 flex items-center justify-center gap-4 border-y border-gold/30 py-4">
+              <div class="text-right">
+                <p class="text-[11px] uppercase tracking-[0.2em] text-batik font-medium">Hari</p>
+                <p class="font-serif text-xl font-semibold text-beskap">Minggu</p>
+              </div>
+              <div class="px-4 border-x border-gold/45">
+                <p class="font-serif text-5xl font-bold text-maroon leading-none">10</p>
+              </div>
+              <div class="text-left">
+                <p class="text-[11px] uppercase tracking-[0.2em] text-batik font-medium">Januari</p>
+                <p class="font-serif text-xl font-semibold text-beskap">2027</p>
+              </div>
+            </div>
+
+            <!-- Waktu -->
+            <div class="mt-5 flex flex-col items-center">
+              <div class="inline-flex items-center gap-2 text-maroon font-semibold text-sm">
+                <svg class="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <polyline points="12 7 12 12 15.5 14" />
+                </svg>
+                <span>09.00 WIB &ndash; Selesai</span>
+              </div>
+            </div>
+
+            <!-- Alamat Lengkap -->
+            <div class="mt-5 rounded-2xl bg-cream/90 border border-gold/35 p-4 text-center">
+              <div class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-maroon/10 text-maroon mb-2">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-maroon">Lokasi Acara &bull; Bandung</p>
+              <p id="venue-address-text" class="mt-2 text-sm font-medium text-beskap leading-relaxed">
+                Jl. Kopo Cirangrang Gg. Sai RT 05 RW 01 No. 30, Bandung
+              </p>
+              <p class="mt-1.5 inline-flex items-center gap-1.5 rounded-full bg-ivory border border-gold/40 px-3 py-1 text-[11px] text-beskap/85">
+                <span class="w-1.5 h-1.5 rounded-full bg-maroon"></span>
+                <span>Patokan: <strong>Masjid Al-Muhajirin</strong></span>
+              </p>
+            </div>
+
+            <!-- Tombol Aksi Lokasi & Kalender -->
+            <div class="mt-5 flex flex-col gap-2.5">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Jl.+Kopo+Cirangrang+Gg.+Sai+RT+05+RW+01+No.+30+Masjid+Al-Muhajirin+Bandung"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-maroon hover:bg-maroon-light active:scale-[0.98] text-ivory px-5 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] shadow-maroon-soft transition-all min-h-[46px]"
+              >
+                <svg class="w-4 h-4 text-gold-soft" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11" />
+                </svg>
+                <span>Buka Google Maps</span>
+              </a>
+
+              <div class="grid grid-cols-2 gap-2.5">
+                <a
+                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Taopik+Hermawan+%26+Mia+Nur+Sholeha&dates=20270110T020000Z/20270110T100000Z&details=Akad+Nikah+%26+Resepsi+Taopik+Hermawan+%26+Mia+Nur+Sholeha.+Waktu:+09.00+WIB+-+Selesai.+Patokan:+Masjid+Al-Muhajirin.&location=Jl.+Kopo+Cirangrang+Gg.+Sai+RT+05+RW+01+No.+30,+Bandung"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center gap-1.5 rounded-full bg-cream hover:bg-gold/20 border border-gold/55 text-beskap px-3 py-3 text-[11px] font-semibold transition-all min-h-[44px]"
+                >
+                  <svg class="w-3.5 h-3.5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <span>Simpan Kalender</span>
+                </a>
+
+                <button
+                  id="btn-copy-address"
+                  type="button"
+                  class="inline-flex items-center justify-center gap-1.5 rounded-full bg-cream hover:bg-gold/20 border border-gold/55 text-beskap px-3 py-3 text-[11px] font-semibold transition-all cursor-pointer min-h-[44px]"
+                >
+                  <svg class="w-3.5 h-3.5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                  <span>Salin Alamat</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           6. GALERI FOTO PREWEDDING AUTO-SLIDE (#galeri)
+      ================================================================== -->
+      <section id="galeri" class="relative px-6 py-12 bg-ivory">
+        <!-- Header Bagian -->
+        <div class="reveal text-center mb-6">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-maroon font-semibold">Momen Bahagia</p>
+          <h2 class="mt-1 font-serif text-3xl font-semibold text-beskap">Galeri Prewedding</h2>
+          <p class="mt-1 text-xs text-batik">Geser foto atau ketuk untuk memperbesar</p>
+        </div>
+
+        <!-- Wrapper Carousel Auto-Slide -->
+        <div class="reveal">
+          <div class="relative rounded-3xl bg-cream p-2.5 border border-gold/45 shadow-maroon-soft">
+            <!-- Viewport Slide (Mendukung Swipe Touch di HP) -->
+            <div
+              id="gallery-viewport"
+              class="relative w-full aspect-[3/4] overflow-hidden rounded-2xl bg-maroon-dark select-none touch-pan-y cursor-pointer"
+            >
+              <!-- Track Slide -->
+              <div
+                id="gallery-track"
+                class="flex w-full h-full transition-transform duration-500 ease-out"
+              >
+                <!-- Slide foto di-render dinamis oleh JS dari PHOTO_PATHS -->
+              </div>
+
+              <!-- Progress Bar Auto-Slide di Bagian Atas -->
+              <div class="pointer-events-none absolute top-0 inset-x-0 h-1 bg-ivory/20 z-20">
+                <div id="gallery-progress-bar" class="h-full bg-gold w-0"></div>
+              </div>
+
+              <!-- Badge Nomor Foto & Petunjuk Perbesar -->
+              <div class="pointer-events-none absolute top-3 left-3 z-20 rounded-full bg-beskap/60 backdrop-blur-sm border border-ivory/20 px-3 py-1 text-[10px] font-medium tracking-widest text-ivory">
+                <span id="gallery-counter">1 / 5</span>
+              </div>
+
+              <!-- Tombol Perbesar (Lightbox) -->
+              <button
+                id="btn-open-lightbox"
+                type="button"
+                aria-label="Perbesar Foto"
+                class="absolute top-3 right-3 z-20 w-9 h-9 rounded-full bg-beskap/60 hover:bg-maroon backdrop-blur-sm border border-ivory/25 text-ivory flex items-center justify-center transition-colors cursor-pointer"
+              >
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9" />
+                  <polyline points="9 21 3 21 3 15" />
+                  <line x1="21" y1="3" x2="14" y2="10" />
+                  <line x1="3" y1="21" x2="10" y2="14" />
+                </svg>
+              </button>
+
+              <!-- Tombol Panah Kiri & Kanan -->
+              <button
+                id="btn-prev-slide"
+                type="button"
+                aria-label="Foto Sebelumnya"
+                class="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-ivory/85 hover:bg-ivory active:scale-95 text-maroon shadow-md border border-gold/40 flex items-center justify-center transition-all cursor-pointer"
+              >
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <button
+                id="btn-next-slide"
+                type="button"
+                aria-label="Foto Berikutnya"
+                class="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-ivory/85 hover:bg-ivory active:scale-95 text-maroon shadow-md border border-gold/40 flex items-center justify-center transition-all cursor-pointer"
+              >
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+
+              <!-- Caption Overlay Halus di Bawah Foto -->
+              <div class="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-beskap/85 via-beskap/40 to-transparent px-4 pt-10 pb-3.5 text-ivory">
+                <p id="gallery-caption-title" class="font-serif text-lg font-semibold leading-tight"></p>
+                <p id="gallery-caption-sub" class="text-[11px] text-ivory/80 mt-0.5"></p>
+              </div>
+            </div>
+
+            <!-- Kontrol Bawah Carousel: Dots + Tombol Jeda/Putar Auto-Slide -->
+            <div class="mt-3 px-1 flex items-center justify-between gap-2">
+              <!-- Indikator Titik -->
+              <div id="gallery-dots" class="flex items-center gap-1.5"></div>
+
+              <!-- Tombol Jeda / Putar Auto-Slide -->
+              <button
+                id="btn-toggle-autoplay"
+                type="button"
+                class="inline-flex items-center gap-1.5 rounded-full bg-ivory border border-gold/50 px-3 py-1.5 text-[11px] font-medium text-maroon hover:bg-maroon hover:text-ivory transition-colors cursor-pointer min-h-[34px]"
+              >
+                <span id="autoplay-icon"></span>
+                <span id="autoplay-label">Jeda Slide</span>
+              </button>
+            </div>
+
+            <!-- Strip Thumbnail Kecil yang Bisa Diklik -->
+            <div
+              id="gallery-thumbnails"
+              class="mt-3 grid grid-cols-5 gap-2"
+            >
+              <!-- Thumbnail di-render oleh JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           7. BUKU TAMU & UCAPAN DOA (RSVP) (#ucapan)
+      ================================================================== -->
+      <section id="ucapan" class="relative px-6 py-12 bg-cream/80 border-y border-gold/25">
+        <!-- Header Bagian -->
+        <div class="reveal text-center mb-6">
+          <p class="text-[10px] uppercase tracking-[0.28em] text-maroon font-semibold">Buku Tamu &amp; RSVP</p>
+          <h2 class="mt-1 font-serif text-3xl font-semibold text-beskap">Ucapan &amp; Doa</h2>
+          <p class="mt-1 text-xs text-batik">Doa restu Bapak/Ibu/Saudara/i merupakan kado terindah bagi kami</p>
+        </div>
+
+        <!-- Ringkasan Kehadiran -->
+        <div class="reveal grid grid-cols-2 gap-3 mb-5">
+          <div class="rounded-2xl bg-ivory border border-gold/35 px-4 py-3 text-center">
+            <p id="stat-total-wishes" class="font-serif text-2xl font-bold text-maroon leading-none">0</p>
+            <p class="mt-1 text-[10px] uppercase tracking-[0.18em] text-batik">Total Ucapan</p>
+          </div>
+          <div class="rounded-2xl bg-ivory border border-gold/35 px-4 py-3 text-center">
+            <p id="stat-attending" class="font-serif text-2xl font-bold text-beskap leading-none">0</p>
+            <p class="mt-1 text-[10px] uppercase tracking-[0.18em] text-batik">Konfirmasi Hadir</p>
+          </div>
+        </div>
+
+        <!-- Form Kirim Ucapan & Konfirmasi Kehadiran -->
+        <form id="rsvp-form" class="reveal rounded-3xl bg-ivory border border-gold/45 p-5 shadow-sm space-y-4">
+          <div>
+            <label for="input-guest-name" class="block text-xs font-semibold text-beskap mb-1.5">
+              Nama Lengkap
+            </label>
+            <input
+              id="input-guest-name"
+              name="name"
+              type="text"
+              required
+              maxlength="60"
+              placeholder="Contoh: Kang Dedi &amp; Keluarga"
+              class="w-full rounded-xl bg-cream/65 border border-gold/45 px-4 py-3 text-sm text-beskap placeholder:text-batik/70 focus:outline-none focus:border-maroon focus:ring-2 focus:ring-maroon/15 transition"
+            />
+          </div>
+
+          <div>
+            <span class="block text-xs font-semibold text-beskap mb-1.5">Konfirmasi Kehadiran</span>
+            <div class="grid grid-cols-2 gap-2.5">
+              <label class="cursor-pointer">
+                <input type="radio" name="attendance" value="Hadir" checked class="peer sr-only" />
+                <div class="rounded-xl border border-gold/45 bg-cream/65 px-3 py-3 text-center text-xs font-semibold text-beskap peer-checked:bg-maroon peer-checked:text-ivory peer-checked:border-maroon transition-all min-h-[44px] flex items-center justify-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>InsyaAllah Hadir</span>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="attendance" value="Berhalangan" class="peer sr-only" />
+                <div class="rounded-xl border border-gold/45 bg-cream/65 px-3 py-3 text-center text-xs font-semibold text-beskap peer-checked:bg-beskap peer-checked:text-ivory peer-checked:border-beskap transition-all min-h-[44px] flex items-center justify-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <line x1="9" y1="9" x2="15" y2="15" />
+                  </svg>
+                  <span>Berhalangan</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label for="input-guest-message" class="block text-xs font-semibold text-beskap mb-1.5">
+              Ucapan &amp; Doa
+            </label>
+            <textarea
+              id="input-guest-message"
+              name="message"
+              rows="3"
+              required
+              maxlength="350"
+              placeholder="Tuliskan doa terbaik untuk Taopik &amp; Mia..."
+              class="w-full rounded-xl bg-cream/65 border border-gold/45 px-4 py-3 text-sm text-beskap placeholder:text-batik/70 focus:outline-none focus:border-maroon focus:ring-2 focus:ring-maroon/15 transition resize-none"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-maroon hover:bg-maroon-light active:scale-[0.98] text-ivory px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] shadow-maroon-soft transition-all cursor-pointer min-h-[46px]"
+          >
+            <svg class="w-4 h-4 text-gold-soft" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            <span>Kirim Ucapan</span>
+          </button>
+        </form>
+
+        <!-- Daftar Ucapan Tamu -->
+        <div id="wishes-list" class="reveal mt-6 space-y-3 max-h-[380px] overflow-y-auto pr-1">
+          <!-- Kartu ucapan di-render dari localStorage oleh JS -->
+        </div>
+      </section>
+
+      <!-- =================================================================
+           8. PENUTUP & FOOTER BANDUNG
+      ================================================================== -->
+      <footer class="relative px-6 pt-12 pb-10 bg-maroon text-ivory text-center overflow-hidden">
+        <!-- Ornamen Wayang Golek Halus di Penutup -->
+        <div class="reveal flex justify-center mb-3">
+          <svg aria-hidden="true" class="w-32 h-11 text-gold-soft" viewBox="0 0 220 68" fill="none">
+            <line x1="16" y1="40" x2="60" y2="40" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.55" />
+            <line x1="160" y1="40" x2="204" y2="40" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.55" />
+            <path d="M110 10C115 17 122 25 123.5 35C124 41 119.5 46.5 110 51C100.5 46.5 96 41 96.5 35C98 25 105 17 110 10Z" stroke="currentColor" stroke-width="1.2" />
+            <circle cx="110" cy="31" r="2.2" fill="currentColor" />
+            <path d="M74 22C74 18 76.5 15 79 14.5C80 12.5 81 11.5 81.5 11.5C82 11.5 82.5 13 82 15C84 16.5 85 19.5 84.5 22.5C84 25 82.5 27 81 28L76 32L73 45L80 48L86 45L89 34L84 28" stroke="currentColor" stroke-width="1.05" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M146 22C146 18 143.5 15 141 14.5C140 12.5 139 11.5 138.5 11.5C138 11.5 137.5 13 138 15C136 16.5 135 19.5 135.5 22.5C136 25 137.5 27 139 28L144 32L147 45L140 48L134 45L131 34L136 28" stroke="currentColor" stroke-width="1.05" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+
+        <div class="reveal">
+          <p class="font-script text-[36px] text-gold-soft leading-none">Hatur Nuhun</p>
+          <p class="mt-3 text-xs leading-relaxed text-ivory/85 max-w-[320px] mx-auto">
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai.
+          </p>
+          <p class="mt-4 font-serif italic text-base text-gold-soft">
+            Wassalamu&rsquo;alaikum Warahmatullahi Wabarakatuh
+          </p>
+
+          <p class="mt-6 text-[10px] uppercase tracking-[0.26em] text-ivory/70">Kami yang berbahagia</p>
+          <h3 class="mt-1 font-serif text-4xl font-semibold text-ivory tracking-wide">
+            Taopik <span class="font-script text-gold-soft font-normal">&amp;</span> Mia
+          </h3>
+
+          <!-- Keluarga Besar -->
+          <div class="mt-5 grid grid-cols-2 gap-3 text-[11px] text-ivory/85 border-t border-gold/25 pt-4">
+            <div>
+              <p class="text-[9px] uppercase tracking-[0.18em] text-gold-soft mb-0.5">Kel. Mempelai Pria</p>
+              <p class="font-medium leading-snug">Bpk. Iwan Hermawan<br />&amp; Ibu Nurhasanah</p>
+            </div>
+            <div class="border-l border-gold/25 pl-3">
+              <p class="text-[9px] uppercase tracking-[0.18em] text-gold-soft mb-0.5">Kel. Mempelai Wanita</p>
+              <p class="font-medium leading-snug">Bpk. Enden Sodikin<br />&amp; Ibu Wida Ningsih</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Siluet Tipis Gedung Sate di Dasar Footer -->
+        <div class="mt-8 flex flex-col items-center opacity-45">
+          <svg aria-hidden="true" class="w-56 h-12 text-gold-soft" viewBox="0 0 360 80" fill="none">
+            <line x1="180" y1="6" x2="180" y2="20" stroke="currentColor" stroke-width="1.4" />
+            <path d="M167 27L180 19L193 27H167Z" stroke="currentColor" stroke-width="1.2" />
+            <path d="M158 37L180 28L202 37H158Z" stroke="currentColor" stroke-width="1.2" />
+            <rect x="166" y="37" width="28" height="12" stroke="currentColor" stroke-width="1.2" />
+            <path d="M132 56L160 49H200L228 56H132Z" stroke="currentColor" stroke-width="1.2" />
+            <path d="M46 62L74 54H132V62H46Z" stroke="currentColor" stroke-width="1.1" />
+            <path d="M314 62L286 54H228V62H314Z" stroke="currentColor" stroke-width="1.1" />
+            <rect x="52" y="62" width="256" height="14" stroke="currentColor" stroke-width="1.1" />
+            <line x1="20" y1="76" x2="340" y2="76" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <p class="mt-2 text-[10px] uppercase tracking-[0.26em] text-ivory/75">Bandung &bull; 10 Januari 2027</p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- ===================================================================
+         FLOATING BOTTOM NAVIGATION KHUSUS MOBILE
+    ==================================================================== -->
+    <nav
+      id="bottom-nav"
+      aria-label="Navigasi Undangan"
+      class="fixed bottom-3 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-24px)] max-w-[402px] rounded-2xl bg-ivory/92 backdrop-blur-md border border-gold/45 shadow-maroon-soft px-1.5 py-1.5 opacity-0 pointer-events-none translate-y-4 transition-all duration-500"
+    >
+      <ul class="grid grid-cols-5 gap-0.5 text-center">
+        <li>
+          <a href="#beranda" data-nav-target="beranda" class="nav-item flex flex-col items-center justify-center rounded-xl py-1.5 px-1 text-batik hover:text-maroon transition-colors min-h-[48px]">
+            <svg class="w-4 h-4 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 10.5L12 3l9 7.5" />
+              <path d="M5 9.5V20h14V9.5" />
+            </svg>
+            <span class="text-[10px] font-medium leading-none">Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="#mempelai" data-nav-target="mempelai" class="nav-item flex flex-col items-center justify-center rounded-xl py-1.5 px-1 text-batik hover:text-maroon transition-colors min-h-[48px]">
+            <svg class="w-4 h-4 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+            <span class="text-[10px] font-medium leading-none">Mempelai</span>
+          </a>
+        </li>
+        <li>
+          <a href="#acara" data-nav-target="acara" class="nav-item flex flex-col items-center justify-center rounded-xl py-1.5 px-1 text-batik hover:text-maroon transition-colors min-h-[48px]">
+            <svg class="w-4 h-4 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            <span class="text-[10px] font-medium leading-none">Acara</span>
+          </a>
+        </li>
+        <li>
+          <a href="#galeri" data-nav-target="galeri" class="nav-item flex flex-col items-center justify-center rounded-xl py-1.5 px-1 text-batik hover:text-maroon transition-colors min-h-[48px]">
+            <svg class="w-4 h-4 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2.5" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg>
+            <span class="text-[10px] font-medium leading-none">Galeri</span>
+          </a>
+        </li>
+        <li>
+          <a href="#ucapan" data-nav-target="ucapan" class="nav-item flex flex-col items-center justify-center rounded-xl py-1.5 px-1 text-batik hover:text-maroon transition-colors min-h-[48px]">
+            <svg class="w-4 h-4 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span class="text-[10px] font-medium leading-none">Ucapan</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ===================================================================
+         LIGHTBOX MODAL UNTUK GALERI PREWEDDING
+    ==================================================================== -->
+    <div
+      id="lightbox-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Pratinjau Foto Prewedding"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-beskap/95 backdrop-blur-sm p-4"
+    >
+      <div class="relative w-full max-w-[400px] flex flex-col items-center">
+        <!-- Bar Atas Lightbox -->
+        <div class="w-full flex items-center justify-between text-ivory mb-3 px-1">
+          <span id="lightbox-counter" class="text-xs tracking-widest text-gold-soft font-medium">1 / 5</span>
+          <button
+            id="btn-close-lightbox"
+            type="button"
+            aria-label="Tutup Pratinjau"
+            class="w-10 h-10 rounded-full bg-ivory/15 hover:bg-maroon text-ivory flex items-center justify-center transition cursor-pointer"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Area Gambar Lightbox -->
+        <div id="lightbox-stage" class="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border border-gold/40 bg-maroon-dark flex items-center justify-center">
+          <img id="lightbox-img" alt="Foto Prewedding" class="w-full h-full object-cover object-top" />
+          <div id="lightbox-fallback" class="hidden absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-maroon via-maroon-dark to-beskap text-ivory">
+            <svg class="w-14 h-14 text-gold/80 mb-3" viewBox="0 0 64 64" fill="none">
+              <path d="M32 8C37 16 44 24 45 34C46 40 41 47 32 52C23 47 18 40 19 34C20 24 27 16 32 8Z" stroke="currentColor" stroke-width="1.3" />
+              <circle cx="32" cy="31" r="4" stroke="currentColor" stroke-width="1.2" />
+            </svg>
+            <span id="lightbox-fallback-title" class="font-serif italic text-gold-soft text-base"></span>
+            <span id="lightbox-fallback-path" class="mt-2 px-3 py-1 rounded-full bg-ivory/10 border border-gold/35 text-xs font-mono text-ivory/90 break-all"></span>
+          </div>
+
+          <!-- Navigasi Kiri & Kanan di Lightbox -->
+          <button
+            id="btn-lb-prev"
+            type="button"
+            aria-label="Foto Sebelumnya"
+            class="absolute left-2.5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-beskap/65 hover:bg-maroon text-ivory border border-ivory/25 flex items-center justify-center cursor-pointer"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+          <button
+            id="btn-lb-next"
+            type="button"
+            aria-label="Foto Berikutnya"
+            class="absolute right-2.5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-beskap/65 hover:bg-maroon text-ivory border border-ivory/25 flex items-center justify-center cursor-pointer"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Caption Lightbox -->
+        <div class="mt-3 text-center text-ivory px-2">
+          <p id="lightbox-title" class="font-serif text-xl font-semibold"></p>
+          <p id="lightbox-sub" class="text-xs text-ivory/75 mt-0.5"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         TOAST NOTIFICATION (Pengganti alert())
+    ==================================================================== -->
+    <div
+      id="toast-box"
+      role="status"
+      aria-live="polite"
+      class="fixed top-4 left-1/2 -translate-x-1/2 z-[60] max-w-[360px] w-[calc(100%-32px)] rounded-2xl bg-beskap text-ivory border border-gold/50 px-4 py-3 text-xs font-medium shadow-xl flex items-center gap-2.5 opacity-0 -translate-y-4 pointer-events-none transition-all duration-300"
+    >
+      <span class="w-2 h-2 rounded-full bg-gold shrink-0"></span>
+      <span id="toast-message">Notifikasi</span>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       JAVASCRIPT: KONFIGURASI FOTO, COUNTDOWN, AUTO-SLIDE, RSVP & NAVIGASI
+  ====================================================================== -->
+  <script>
+    /**
+     * =====================================================================
+     * KONFIGURASI PATH FOTO LOKAL
+     * Simpan file foto prewedding Anda di dalam folder "images/" sejajar
+     * dengan file HTML ini, lalu sesuaikan nama filenya di bawah jika perlu.
+     * =====================================================================
+     */
+    const PHOTO_PATHS = {
+      utama: './images/foto-utama.jpg',      // 1. Foto utama pasangan
+      cowo: './images/foto-cowo.jpg',        // 2. Foto mempelai pria (Taopik)
+      cewe: './images/foto-cewe.jpg',        // 3. Foto mempelai wanita (Mia)
+      tambahan1: './images/galeri-1.jpg',    // 4. Foto tambahan 1 - pasangan dengan payung
+      tambahan2: './images/galeri-2.jpg',    // 5. Foto tambahan 2 - close-up mempelai wanita
+    };
+
+    /**
+     * Daftar urut galeri prewedding (auto-slide & hero mini preview)
+     */
+    const GALLERY_ITEMS = [
+      {
+        key: 'utama',
+        path: PHOTO_PATHS.utama,
+        title: 'Taopik & Mia',
+        subtitle: 'Busana Adat Sunda — Foto Utama',
+      },
+      {
+        key: 'cowo',
+        path: PHOTO_PATHS.cowo,
+        title: 'Taopik Hermawan',
+        subtitle: 'Beskap Sunda — Mempelai Pria',
+      },
+      {
+        key: 'cewe',
+        path: PHOTO_PATHS.cewe,
+        title: 'Mia Nur Sholeha',
+        subtitle: 'Kebaya Sunda — Mempelai Wanita',
+      },
+      {
+        key: 'tambahan1',
+        path: PHOTO_PATHS.tambahan1,
+        title: 'Langkah Bersama',
+        subtitle: 'Naungan Kasih & Tradisi Sunda',
+      },
+      {
+        key: 'tambahan2',
+        path: PHOTO_PATHS.tambahan2,
+        title: 'Anggun & Berseri',
+        subtitle: 'Potret Mempelai Wanita',
+      },
+    ];
+
+    /**
+     * Tanggal & Waktu Akad/Resepsi (WIB / UTC+7)
+     */
+    const WEDDING_DATE_ISO = '2027-01-10T09:00:00+07:00';
+    const AUTO_SLIDE_INTERVAL_MS = 3500;
+    const WISHES_STORAGE_KEY = 'taopik_mia_wedding_wishes_v1';
+
+    /**
+     * Contoh Ucapan Awal Bernuansa Sunda & Indonesia
+     */
+    const DEFAULT_WISHES = [
+      {
+        name: 'Kang Ridwan & Teh Siti',
+        attendance: 'Hadir',
+        message: 'Wilujeng nikah Kang Taopik sareng Teh Mia! Mugi janten kulawarga anu sakinah, mawaddah, warahmah tur dipaparin kabagjaan salamina.',
+        createdAt: 'Baru saja',
+      },
+      {
+        name: 'Keluarga Besar Cirangrang',
+        attendance: 'Hadir',
+        message: 'Barakallahu lakuma wa baraka alaikuma. Semoga lancar sampai hari H dan selalu dalam lindungan Allah SWT. InsyaAllah kami hadir!',
+        createdAt: '2 jam lalu',
+      },
+      {
+        name: 'Neng Rina Marlina',
+        attendance: 'Hadir',
+        message: 'MasyaAllah, foto prewed adat Sundanya elegan banget! Selamat menempuh hidup baru untuk Taopik & Mia, langgeng terus ya.',
+        createdAt: 'Kemarin',
+      },
+    ];
+
+    // =====================================================================
+    // UTILITAS: TOAST NOTIFICATION & COPY CLIPBOARD (TANPA alert())
+    // =====================================================================
+    let toastTimer = null;
+    function showToast(message) {
+      const box = document.getElementById('toast-box');
+      const msgEl = document.getElementById('toast-message');
+      if (!box || !msgEl) return;
+
+      msgEl.textContent = message;
+      box.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+      box.classList.add('opacity-100', 'translate-y-0');
+
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        box.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+        box.classList.remove('opacity-100', 'translate-y-0');
+      }, 2800);
+    }
+
+    function copyTextFallback(text) {
+      try {
+        const tempInput = document.createElement('textarea');
+        tempInput.value = text;
+        tempInput.setAttribute('readonly', '');
+        tempInput.style.position = 'fixed';
+        tempInput.style.opacity = '0';
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999);
+        const copied = document.execCommand('copy');
+        document.body.removeChild(tempInput);
+        return copied;
+      } catch (err) {
+        return false;
+      }
+    }
+
+    // =====================================================================
+    // HELPER: MENAMPILKAN FALLBACK SVG ELEGAN JIKA FILE FOTO BELUM ADA
+    // =====================================================================
+    function attachImageWithFallback(imgEl, path, fallbackContainer) {
+      if (!imgEl) return;
+      const cleanDisplayPath = path.replace(/^\.\//, '');
+
+      const showFallback = () => {
+        imgEl.classList.add('hidden');
+        if (fallbackContainer) {
+          fallbackContainer.classList.remove('hidden');
+          const pathBadge = fallbackContainer.querySelector('.fallback-path');
+          if (pathBadge) pathBadge.textContent = cleanDisplayPath;
+        }
+      };
+
+      const hideFallback = () => {
+        imgEl.classList.remove('hidden');
+        if (fallbackContainer) {
+          fallbackContainer.classList.add('hidden');
+        }
+      };
+
+      imgEl.onload = hideFallback;
+      imgEl.onerror = showFallback;
+      imgEl.src = path;
+
+      // Tangani kasus browser sudah gagal memuat sebelum event terpasang
+      if (imgEl.complete && imgEl.naturalWidth === 0) {
+        showFallback();
+      }
+    }
+
+    function hydrateStaticPhotos() {
+      document.querySelectorAll('img[data-photo-key]').forEach((imgEl) => {
+        const key = imgEl.getAttribute('data-photo-key');
+        const path = PHOTO_PATHS[key];
+        if (!path) return;
+        const fallbackEl = imgEl.parentElement
+          ? imgEl.parentElement.querySelector('.photo-fallback')
+          : null;
+        attachImageWithFallback(imgEl, path, fallbackEl);
+      });
+    }
+
+    // =====================================================================
+    // 1. PARSING NAMA TAMU DINAMIS (?to=Nama+Tamu) & COVER OVERLAY
+    // =====================================================================
+    function initGuestNameFromURL() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const rawGuest = params.get('to');
+        const guestNameEl = document.getElementById('cover-guest-name');
+        const rsvpNameInput = document.getElementById('input-guest-name');
+
+        if (rawGuest && rawGuest.trim().length > 0) {
+          const cleanName = rawGuest.trim().slice(0, 70);
+          if (guestNameEl) guestNameEl.textContent = cleanName;
+          if (rsvpNameInput) rsvpNameInput.value = cleanName;
+        }
+      } catch (err) {
+        // Fallback diam ke default "Bapak/Ibu/Saudara/i"
+      }
+    }
+
+    function initCoverInteraction(onOpenCallback) {
+      const coverEl = document.getElementById('cover-overlay');
+      const openBtn = document.getElementById('btn-open-invitation');
+      const bottomNav = document.getElementById('bottom-nav');
+
+      if (!openBtn || !coverEl) return;
+
+      openBtn.addEventListener('click', () => {
+        coverEl.classList.add('cover-exit');
+        document.body.classList.remove('cover-locked');
+
+        // Tampilkan navigasi bawah melayang
+        if (bottomNav) {
+          bottomNav.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+          bottomNav.classList.add('opacity-100', 'translate-y-0');
+        }
+
+        // Hapus dari alur visual setelah transisi selesai
+        setTimeout(() => {
+          coverEl.classList.add('hidden');
+        }, 720);
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (typeof onOpenCallback === 'function') onOpenCallback();
+      });
+    }
+
+    // =====================================================================
+    // 2. MINI AUTO-SLIDE PREVIEW DI HERO SECTION
+    // =====================================================================
+    function initHeroMiniSlider() {
+      const container = document.getElementById('hero-mini-slider');
+      const dotsWrap = document.getElementById('hero-mini-dots');
+      if (!container || !dotsWrap) return;
+
+      let heroIndex = 0;
+
+      GALLERY_ITEMS.forEach((item, idx) => {
+        const slide = document.createElement('div');
+        slide.className = `hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+          idx === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0'
+        }`;
+
+        const img = document.createElement('img');
+        img.alt = item.title;
+        img.className = 'w-full h-full object-cover object-top';
+
+        const fallback = document.createElement('div');
+        fallback.className =
+          'photo-fallback hidden absolute inset-0 flex flex-col items-center justify-center p-5 text-center bg-gradient-to-b from-maroon via-maroon-dark to-beskap text-ivory';
+        fallback.innerHTML = `
+          <svg class="w-11 h-11 text-gold/80 mb-2.5" viewBox="0 0 64 64" fill="none">
+            <path d="M32 8C37 16 44 24 45 34C46 40 41 47 32 52C23 47 18 40 19 34C20 24 27 16 32 8Z" stroke="currentColor" stroke-width="1.3" />
+            <circle cx="32" cy="31" r="3.5" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <span class="font-serif italic text-gold-soft text-sm">${item.title}</span>
+          <span class="fallback-path mt-1.5 px-2.5 py-1 rounded-full bg-ivory/10 border border-gold/35 text-[10px] font-mono text-ivory/90 break-all"></span>
+        `;
+
+        slide.appendChild(img);
+        slide.appendChild(fallback);
+        container.appendChild(slide);
+        attachImageWithFallback(img, item.path, fallback);
+
+        const dot = document.createElement('span');
+        dot.className = `hero-dot h-1.5 rounded-full transition-all duration-500 ${
+          idx === 0 ? 'w-5 bg-maroon' : 'w-1.5 bg-gold/45'
+        }`;
+        dotsWrap.appendChild(dot);
+      });
+
+      const slides = container.querySelectorAll('.hero-slide');
+      const dots = dotsWrap.querySelectorAll('.hero-dot');
+
+      setInterval(() => {
+        heroIndex = (heroIndex + 1) % GALLERY_ITEMS.length;
+        slides.forEach((el, idx) => {
+          el.classList.toggle('opacity-100', idx === heroIndex);
+          el.classList.toggle('z-10', idx === heroIndex);
+          el.classList.toggle('opacity-0', idx !== heroIndex);
+          el.classList.toggle('z-0', idx !== heroIndex);
+        });
+        dots.forEach((dot, idx) => {
+          dot.className = `hero-dot h-1.5 rounded-full transition-all duration-500 ${
+            idx === heroIndex ? 'w-5 bg-maroon' : 'w-1.5 bg-gold/45'
+          }`;
+        });
+      }, 4200);
+    }
+
+    // =====================================================================
+    // 3. COUNTDOWN TIMER REAL-TIME MENUJU 10 JANUARI 2027 09:00 WIB
+    // =====================================================================
+    function initCountdownTimer() {
+      const targetTime = new Date(WEDDING_DATE_ISO).getTime();
+      const daysEl = document.getElementById('cd-days');
+      const hoursEl = document.getElementById('cd-hours');
+      const minsEl = document.getElementById('cd-minutes');
+      const secsEl = document.getElementById('cd-seconds');
+      const statusEl = document.getElementById('countdown-status');
+
+      if (!daysEl || !hoursEl || !minsEl || !secsEl) return;
+
+      const pad = (n) => String(n).padStart(2, '0');
+
+      function update() {
+        const now = Date.now();
+        const diff = targetTime - now;
+
+        if (diff <= 0) {
+          daysEl.textContent = '00';
+          hoursEl.textContent = '00';
+          minsEl.textContent = '00';
+          secsEl.textContent = '00';
+          if (statusEl) {
+            statusEl.textContent = 'Alhamdulillah, Hari Bahagia Telah Tiba!';
+            statusEl.classList.remove('hidden');
+          }
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        daysEl.textContent = pad(days);
+        hoursEl.textContent = pad(hours);
+        minsEl.textContent = pad(minutes);
+        secsEl.textContent = pad(seconds);
+      }
+
+      update();
+      setInterval(update, 1000);
+    }
+
+    // =====================================================================
+    // 4. GALERI PREWEDDING AUTO-SLIDE + SWIPE + THUMBNAILS + LIGHTBOX
+    // =====================================================================
+    function initGalleryCarousel() {
+      const viewport = document.getElementById('gallery-viewport');
+      const track = document.getElementById('gallery-track');
+      const dotsContainer = document.getElementById('gallery-dots');
+      const thumbsContainer = document.getElementById('gallery-thumbnails');
+      const counterEl = document.getElementById('gallery-counter');
+      const captionTitleEl = document.getElementById('gallery-caption-title');
+      const captionSubEl = document.getElementById('gallery-caption-sub');
+      const progressBar = document.getElementById('gallery-progress-bar');
+
+      const btnPrev = document.getElementById('btn-prev-slide');
+      const btnNext = document.getElementById('btn-next-slide');
+      const btnToggleAuto = document.getElementById('btn-toggle-autoplay');
+      const autoIcon = document.getElementById('autoplay-icon');
+      const autoLabel = document.getElementById('autoplay-label');
+      const btnOpenLightbox = document.getElementById('btn-open-lightbox');
+
+      // Elemen Lightbox
+      const lbModal = document.getElementById('lightbox-modal');
+      const lbStage = document.getElementById('lightbox-stage');
+      const lbImg = document.getElementById('lightbox-img');
+      const lbFallback = document.getElementById('lightbox-fallback');
+      const lbFallbackTitle = document.getElementById('lightbox-fallback-title');
+      const lbFallbackPath = document.getElementById('lightbox-fallback-path');
+      const lbCounter = document.getElementById('lightbox-counter');
+      const lbTitle = document.getElementById('lightbox-title');
+      const lbSub = document.getElementById('lightbox-sub');
+      const btnCloseLb = document.getElementById('btn-close-lightbox');
+      const btnLbPrev = document.getElementById('btn-lb-prev');
+      const btnLbNext = document.getElementById('btn-lb-next');
+
+      if (!track || !viewport) return;
+
+      let currentIndex = 0;
+      let isPlaying = true;
+      let isLightboxOpen = false;
+      let autoSlideTimer = null;
+
+      // Render slides, dots, dan thumbnails
+      GALLERY_ITEMS.forEach((item, idx) => {
+        // Slide utama
+        const slideEl = document.createElement('div');
+        slideEl.className = 'relative w-full h-full shrink-0 bg-maroon-dark';
+
+        const img = document.createElement('img');
+        img.alt = `${item.title} — ${item.subtitle}`;
+        img.className = 'w-full h-full object-cover object-top';
+        img.draggable = false;
+
+        const fallback = document.createElement('div');
+        fallback.className =
+          'photo-fallback hidden absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-maroon via-maroon-dark to-beskap text-ivory';
+        fallback.innerHTML = `
+          <svg class="w-14 h-14 text-gold/80 mb-3" viewBox="0 0 64 64" fill="none">
+            <path d="M32 8C37 16 44 24 45 34C46 40 41 47 32 52C23 47 18 40 19 34C20 24 27 16 32 8Z" stroke="currentColor" stroke-width="1.3" />
+            <circle cx="32" cy="31" r="4" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <span class="font-serif italic text-gold-soft text-base">${item.title}</span>
+          <span class="fallback-path mt-2 px-3 py-1 rounded-full bg-ivory/10 border border-gold/35 text-[11px] font-mono text-ivory/90 break-all"></span>
+        `;
+
+        slideEl.appendChild(img);
+        slideEl.appendChild(fallback);
+        track.appendChild(slideEl);
+        attachImageWithFallback(img, item.path, fallback);
+
+        // Dot indikator
+        const dotBtn = document.createElement('button');
+        dotBtn.type = 'button';
+        dotBtn.setAttribute('aria-label', `Lihat Foto ${idx + 1}`);
+        dotBtn.className = 'gallery-dot h-2 rounded-full transition-all duration-300 cursor-pointer';
+        dotBtn.addEventListener('click', () => {
+          goToSlide(idx);
+          resetAutoSlide();
+        });
+        dotsContainer.appendChild(dotBtn);
+
+        // Thumbnail kecil
+        const thumbBtn = document.createElement('button');
+        thumbBtn.type = 'button';
+        thumbBtn.setAttribute('aria-label', `Pilih Foto ${idx + 1}: ${item.title}`);
+        thumbBtn.className =
+          'gallery-thumb relative aspect-[3/4] rounded-xl overflow-hidden border-2 transition-all duration-300 cursor-pointer bg-maroon-dark';
+
+        const thumbImg = document.createElement('img');
+        thumbImg.alt = item.title;
+        thumbImg.className = 'w-full h-full object-cover object-top';
+
+        const thumbFallback = document.createElement('div');
+        thumbFallback.className =
+          'photo-fallback hidden absolute inset-0 flex flex-col items-center justify-center p-1 text-center bg-gradient-to-b from-maroon to-beskap text-gold-soft';
+        thumbFallback.innerHTML = `<span class="font-serif text-xs font-semibold">${idx + 1}</span>`;
+
+        thumbBtn.appendChild(thumbImg);
+        thumbBtn.appendChild(thumbFallback);
+        thumbsContainer.appendChild(thumbBtn);
+        attachImageWithFallback(thumbImg, item.path, thumbFallback);
+
+        thumbBtn.addEventListener('click', () => {
+          goToSlide(idx);
+          resetAutoSlide();
+        });
+      });
+
+      function restartProgressBar() {
+        if (!progressBar) return;
+        progressBar.classList.remove('slide-progress-active');
+        // Memicu reflow agar animasi CSS dimulai ulang
+        void progressBar.offsetWidth;
+        if (isPlaying && !isLightboxOpen) {
+          progressBar.classList.add('slide-progress-active');
+        } else {
+          progressBar.style.width = '0%';
+        }
+      }
+
+      function updateAutoPlayButtonUI() {
+        if (!autoIcon || !autoLabel) return;
+        if (isPlaying) {
+          autoIcon.innerHTML =
+            '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+          autoLabel.textContent = 'Jeda Slide';
+        } else {
+          autoIcon.innerHTML =
+            '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>';
+          autoLabel.textContent = 'Putar Slide';
+        }
+      }
+
+      function syncLightboxContent() {
+        const item = GALLERY_ITEMS[currentIndex];
+        if (!item) return;
+
+        lbCounter.textContent = `${currentIndex + 1} / ${GALLERY_ITEMS.length}`;
+        lbTitle.textContent = item.title;
+        lbSub.textContent = item.subtitle;
+        lbFallbackTitle.textContent = item.title;
+        lbFallbackPath.textContent = item.path.replace(/^\.\//, '');
+
+        lbImg.classList.remove('hidden');
+        lbFallback.classList.add('hidden');
+        lbImg.onload = () => {
+          lbImg.classList.remove('hidden');
+          lbFallback.classList.add('hidden');
+        };
+        lbImg.onerror = () => {
+          lbImg.classList.add('hidden');
+          lbFallback.classList.remove('hidden');
+        };
+        lbImg.src = item.path;
+        if (lbImg.complete && lbImg.naturalWidth === 0) {
+          lbImg.classList.add('hidden');
+          lbFallback.classList.remove('hidden');
+        }
+      }
+
+      function goToSlide(index) {
+        currentIndex = (index + GALLERY_ITEMS.length) % GALLERY_ITEMS.length;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        const item = GALLERY_ITEMS[currentIndex];
+        counterEl.textContent = `${currentIndex + 1} / ${GALLERY_ITEMS.length}`;
+        captionTitleEl.textContent = item.title;
+        captionSubEl.textContent = item.subtitle;
+
+        // Perbarui tampilan dots
+        dotsContainer.querySelectorAll('.gallery-dot').forEach((dot, idx) => {
+          if (idx === currentIndex) {
+            dot.className = 'gallery-dot h-2 w-6 rounded-full bg-maroon transition-all duration-300 cursor-pointer';
+          } else {
+            dot.className = 'gallery-dot h-2 w-2 rounded-full bg-gold/45 hover:bg-gold transition-all duration-300 cursor-pointer';
+          }
+        });
+
+        // Perbarui tampilan thumbnails
+        thumbsContainer.querySelectorAll('.gallery-thumb').forEach((thumb, idx) => {
+          if (idx === currentIndex) {
+            thumb.classList.add('border-maroon', 'scale-[1.03]', 'shadow-sm');
+            thumb.classList.remove('border-transparent', 'opacity-65');
+          } else {
+            thumb.classList.remove('border-maroon', 'scale-[1.03]', 'shadow-sm');
+            thumb.classList.add('border-transparent', 'opacity-65');
+          }
+        });
+
+        if (isLightboxOpen) {
+          syncLightboxContent();
+        }
+        restartProgressBar();
+      }
+
+      function startAutoSlide() {
+        clearInterval(autoSlideTimer);
+        if (!isPlaying || isLightboxOpen) return;
+        restartProgressBar();
+        autoSlideTimer = setInterval(() => {
+          goToSlide(currentIndex + 1);
+        }, AUTO_SLIDE_INTERVAL_MS);
+      }
+
+      function stopAutoSlide() {
+        clearInterval(autoSlideTimer);
+        restartProgressBar();
+      }
+
+      function resetAutoSlide() {
+        if (isPlaying && !isLightboxOpen) {
+          startAutoSlide();
+        }
+      }
+
+      // Kontrol Tombol Panah & Jeda/Putar
+      btnPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goToSlide(currentIndex - 1);
+        resetAutoSlide();
+      });
+
+      btnNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goToSlide(currentIndex + 1);
+        resetAutoSlide();
+      });
+
+      btnToggleAuto.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        updateAutoPlayButtonUI();
+        if (isPlaying) {
+          startAutoSlide();
+          showToast('Auto-slide galeri dilanjutkan');
+        } else {
+          stopAutoSlide();
+          showToast('Auto-slide galeri dijeda');
+        }
+      });
+
+      // Buka & Tutup Lightbox
+      function openLightbox() {
+        isLightboxOpen = true;
+        stopAutoSlide();
+        syncLightboxContent();
+        lbModal.classList.remove('hidden');
+        lbModal.classList.add('flex');
+      }
+
+      function closeLightbox() {
+        isLightboxOpen = false;
+        lbModal.classList.add('hidden');
+        lbModal.classList.remove('flex');
+        if (isPlaying) startAutoSlide();
+      }
+
+      btnOpenLightbox.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openLightbox();
+      });
+
+      btnCloseLb.addEventListener('click', closeLightbox);
+      lbModal.addEventListener('click', (e) => {
+        if (e.target === lbModal) closeLightbox();
+      });
+
+      btnLbPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goToSlide(currentIndex - 1);
+      });
+      btnLbNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goToSlide(currentIndex + 1);
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (!isLightboxOpen) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') goToSlide(currentIndex - 1);
+        if (e.key === 'ArrowRight') goToSlide(currentIndex + 1);
+      });
+
+      // Gesture Touch Swipe di HP (untuk Carousel & Lightbox)
+      function bindSwipeGestures(targetEl, allowTapLightbox) {
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchEndX = 0;
+        let isDragging = false;
+
+        targetEl.addEventListener(
+          'touchstart',
+          (e) => {
+            if (!e.touches || e.touches.length === 0) return;
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            touchEndX = touchStartX;
+            isDragging = true;
+          },
+          { passive: true }
+        );
+
+        targetEl.addEventListener(
+          'touchmove',
+          (e) => {
+            if (!isDragging || !e.touches || e.touches.length === 0) return;
+            touchEndX = e.touches[0].clientX;
+          },
+          { passive: true }
+        );
+
+        targetEl.addEventListener(
+          'touchend',
+          (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            const deltaX = touchEndX - touchStartX;
+            const endY = e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientY : touchStartY;
+            const deltaY = Math.abs(endY - touchStartY);
+
+            // Swipe horizontal minimal 40px
+            if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > deltaY) {
+              if (deltaX < 0) {
+                goToSlide(currentIndex + 1);
+              } else {
+                goToSlide(currentIndex - 1);
+              }
+              resetAutoSlide();
+            }
+          },
+          { passive: true }
+        );
+
+        if (allowTapLightbox) {
+          targetEl.addEventListener('click', (e) => {
+            // Abaikan klik yang berasal dari tombol kontrol di dalam viewport
+            if (e.target.closest('button')) return;
+            openLightbox();
+          });
+        }
+      }
+
+      bindSwipeGestures(viewport, true);
+      bindSwipeGestures(lbStage, false);
+
+      // Inisialisasi awal
+      updateAutoPlayButtonUI();
+      goToSlide(0);
+      startAutoSlide();
+    }
+
+    // =====================================================================
+    // 5. BUKU TAMU & UCAPAN DOA (RSVP + localStorage)
+    // =====================================================================
+    function initGuestbookRSVP() {
+      const form = document.getElementById('rsvp-form');
+      const listEl = document.getElementById('wishes-list');
+      const totalEl = document.getElementById('stat-total-wishes');
+      const attendingEl = document.getElementById('stat-attending');
+
+      if (!form || !listEl) return;
+
+      function loadWishes() {
+        try {
+          const saved = localStorage.getItem(WISHES_STORAGE_KEY);
+          if (saved) {
+            const parsed = JSON.parse(saved);
+            if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+          }
+        } catch (err) {
+          // Gunakan data default jika localStorage tidak tersedia
+        }
+        return [...DEFAULT_WISHES];
+      }
+
+      function saveWishes(wishes) {
+        try {
+          localStorage.setItem(WISHES_STORAGE_KEY, JSON.stringify(wishes));
+        } catch (err) {
+          // Abaikan jika penyimpanan dibatasi
+        }
+      }
+
+      let wishes = loadWishes();
+
+      function renderWishes() {
+        listEl.innerHTML = '';
+        const attendingCount = wishes.filter((w) => w.attendance === 'Hadir').length;
+
+        if (totalEl) totalEl.textContent = String(wishes.length);
+        if (attendingEl) attendingEl.textContent = String(attendingCount);
+
+        wishes.forEach((wish) => {
+          const card = document.createElement('article');
+          card.className = 'rounded-2xl bg-ivory border border-gold/35 p-4 shadow-sm';
+
+          const headerRow = document.createElement('div');
+          headerRow.className = 'flex items-start justify-between gap-2';
+
+          const nameWrap = document.createElement('div');
+          const nameEl = document.createElement('h4');
+          nameEl.className = 'text-sm font-semibold text-beskap leading-snug';
+          nameEl.textContent = wish.name;
+
+          const timeEl = document.createElement('p');
+          timeEl.className = 'text-[10px] text-batik mt-0.5';
+          timeEl.textContent = wish.createdAt || 'Baru saja';
+
+          nameWrap.appendChild(nameEl);
+          nameWrap.appendChild(timeEl);
+
+          const badge = document.createElement('span');
+          const isHadir = wish.attendance === 'Hadir';
+          badge.className = `shrink-0 rounded-full px-2.5 py-0.5 text-[10px] font-semibold ${
+            isHadir
+              ? 'bg-maroon/12 text-maroon border border-maroon/20'
+              : 'bg-batik/15 text-batik border border-batik/25'
+          }`;
+          badge.textContent = isHadir ? 'Hadir' : 'Berhalangan';
+
+          headerRow.appendChild(nameWrap);
+          headerRow.appendChild(badge);
+
+          const msgEl = document.createElement('p');
+          msgEl.className = 'mt-2.5 text-xs leading-relaxed text-beskap/85 whitespace-pre-line';
+          msgEl.textContent = wish.message;
+
+          card.appendChild(headerRow);
+          card.appendChild(msgEl);
+          listEl.appendChild(card);
+        });
+      }
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nameInput = document.getElementById('input-guest-name');
+        const msgInput = document.getElementById('input-guest-message');
+        const attendanceInput = form.querySelector('input[name="attendance"]:checked');
+
+        const name = nameInput.value.trim();
+        const message = msgInput.value.trim();
+        const attendance = attendanceInput ? attendanceInput.value : 'Hadir';
+
+        if (!name || !message) {
+          showToast('Mohon lengkapi nama dan ucapan Anda');
+          return;
+        }
+
+        const nowLabel = new Intl.DateTimeFormat('id-ID', {
+          day: 'numeric',
+          month: 'short',
+          hour: '2-digit',
+          minute: '2-digit',
+        }).format(new Date());
+
+        wishes.unshift({
+          name,
+          attendance,
+          message,
+          createdAt: nowLabel,
+        });
+
+        saveWishes(wishes);
+        renderWishes();
+
+        msgInput.value = '';
+        showToast('Hatur nuhun! Ucapan & doa Anda telah terkirim.');
+      });
+
+      renderWishes();
+    }
+
+    // =====================================================================
+    // 6. SALIN ALAMAT, SCROLL REVEAL & HIGHLIGHT NAVIGASI BAWAH
+    // =====================================================================
+    function initCopyAddressButton() {
+      const btnCopy = document.getElementById('btn-copy-address');
+      if (!btnCopy) return;
+
+      const fullAddress =
+        'Jl. Kopo Cirangrang Gg. Sai RT 05 RW 01 No. 30 (Patokan: Masjid Al-Muhajirin), Bandung';
+
+      btnCopy.addEventListener('click', () => {
+        const ok = copyTextFallback(fullAddress);
+        if (ok) {
+          showToast('Alamat lengkap berhasil disalin');
+        } else {
+          showToast('Silakan salin alamat secara manual');
+        }
+      });
+    }
+
+    function initScrollRevealAndNavSync() {
+      // Animasi Scroll Reveal
+      const revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -30px 0px' }
+        );
+
+        revealEls.forEach((el) => revealObserver.observe(el));
+
+        // Sinkronisasi tab aktif Bottom Nav saat scroll
+        const sections = ['beranda', 'mempelai', 'acara', 'galeri', 'ucapan']
+          .map((id) => document.getElementById(id))
+          .filter(Boolean);
+        const navItems = document.querySelectorAll('.nav-item');
+
+        const setActiveNav = (activeId) => {
+          navItems.forEach((item) => {
+            const isActive = item.getAttribute('data-nav-target') === activeId;
+            item.classList.toggle('bg-maroon', isActive);
+            item.classList.toggle('text-ivory', isActive);
+            item.classList.toggle('shadow-sm', isActive);
+            item.classList.toggle('text-batik', !isActive);
+          });
+        };
+
+        setActiveNav('beranda');
+
+        const navObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                setActiveNav(entry.target.id);
+              }
+            });
+          },
+          { rootMargin: '-35% 0px -50% 0px', threshold: 0.05 }
+        );
+
+        sections.forEach((sec) => navObserver.observe(sec));
+      } else {
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+      }
+    }
+
+    // =====================================================================
+    // INISIALISASI SAAT HALAMAN SIAP
+    // =====================================================================
+    document.addEventListener('DOMContentLoaded', () => {
+      initGuestNameFromURL();
+      hydrateStaticPhotos();
+      initHeroMiniSlider();
+      initCountdownTimer();
+      initGalleryCarousel();
+      initGuestbookRSVP();
+      initCopyAddressButton();
+      initCoverInteraction(() => {
+        initScrollRevealAndNavSync();
+      });
+    });
+  </script>
+</body>
+</html>
